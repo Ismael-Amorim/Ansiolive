@@ -8,7 +8,7 @@
 
 /* Estilização do corpo */
 body {
-    background-color: #f4f4f4;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -160,6 +160,7 @@ body {
     text-decoration: none;
     border-radius: 0.3125rem;
     transition: 0.3s;
+    margin-bottom: 1rem;
 }
 
 .cta-button:hover {
@@ -353,12 +354,6 @@ body {
     line-height: 1.4;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
 .section-title {
     font-size: 2.25rem;
     font-weight: bold;
@@ -378,7 +373,6 @@ body {
 .video {
     width: 25rem;
     height: 20rem;
-    border-radius: 1rem;
 }
 
 .titulo-videos {
@@ -690,6 +684,285 @@ body {
     100% { transform: scale(1); }
 }
 
+/*Pirataria*/
+.aviso {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin-bottom: 7rem;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.risco {
+    position: absolute;
+    height: 3px;
+    border-radius: 2px;
+    line-height: 1;
+}
+
+.aviso p {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 auto;
+}
+
+/*Faq*/
+#faq h2 {
+    font-family: "League Spartan",Sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f0520b;
+    margin-bottom: 1rem;
+    
+}
+
+.faq-container {
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-color: #444;
+}
+
+.faq-item {
+    border-bottom: 1px solid #fff;
+}
+
+.faq-question {
+    background-color: #014f86;
+    color: #1f2124;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-color: #d5d8dc;
+    flex-direction: row;
+    gap: 0 10px;
+}
+
+.faq-icon {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    background-color: white;
+    padding: 1.4rem;
+    font-size: 16px;
+    color: #7a7a7a;
+    border-color: #d5d8dc;
+    border-style: solid;
+    border-width: 1px;
+    text-align: initial;
+    align-self: auto;
+    flex-grow: 1;
+    flex-wrap: initial;
+    justify-content: initial;
+    
+}
+
+/*Livro*/
+.book-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Garante que o topo dos elementos fique alinhado */
+    padding: 40px;
+    background-color: #fff;
+}
+
+.book-container {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.book-container img {
+    width: 20rem;
+    border-radius: 8px;
+}
+
+.book-details {
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que o texto comece do topo */
+}
+
+.book-details h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.book-title {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+/*Referências*/
+.scientific-references {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.scientific-references h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.references-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.references-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.references-logos img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.references-text {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #7a7a7a;
+}
+
+.references-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/*Footer*/
+.footer {
+    background-color: #344046;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.footer-top p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    font-family: monospace,monospace;
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
+
+.payment-security {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 15rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+.payment-icons img {
+    margin: 5px;
+    width: 100%;
+}
+
+
+.security-icons img {
+    margin: 5px;
+    width: 15rem;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info span {
+    color: #6ec1e4;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.footer-middle {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: #d6336c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.cnpj {
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background-color: black;
+    padding: 15px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.disclaimer {
+    font-size: 10px;
+    line-height: 1.4;
+}
 
 
 @media (max-width: 768px) {
@@ -831,5 +1104,80 @@ body {
         padding: 1rem;
         margin: auto;
         width: 100%;
+    }
+    .book-container {
+        display: block;
+        line-height: 2rem;
+        gap: 20px;
+        max-width: 900px;
+        align-items: flex-start; /* Alinha os itens ao topo */
+    }
+    .references-text {
+        margin: auto;
+        margin-right: 1rem;
+    }
+
+    .footer-top {
+        height: 40rem;
+    }
+    .garantia-container {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 30px;
+        padding: 20px;
+        line-height: 4.5rem;
+    }
+
+    .ansiedade-content {
+        text-align: left;
+        padding: 1rem;
+    }
+    .ansiedade-title {
+        font-size: 1.4375rem;
+    }
+    .espaco {
+        height: 5rem;
+    }
+    .titulo-composicao, 
+    .titulo-recomendacao,
+    .section-header,
+    .titulo-sec4 {
+        font-size: 1.5625rem;
+    }
+    .recomendacao-item:last-of-type {
+        margin-bottom: 3rem;
+    }
+    .video {
+        width: 20rem;
+        height: 20rem;
+    }
+    #video {
+        font-size: 1.1875rem;
+        padding: 0;
+        margin-bottom: 0.2rem;
+    }
+    .section-title {
+        font-size: 1.375rem;
+    }
+    .subtitulo-sec4 {
+        font-size: 1.125rem;
+    }
+    .titulo-sec4,
+    .subtitulo-sec4 {
+        padding: 0.3rem;
+    }
+    .sub-header {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .header {
+        font-size: 1.6875rem;
+    }
+    #selos {
+        text-align: center;
+        width: 90%;
     }
 }
