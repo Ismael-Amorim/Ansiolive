@@ -191,7 +191,17 @@ body {
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
-    height: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-wrapper-depoimentos {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
     overflow: hidden;
     max-width: 100%;
     background: #000;
@@ -300,6 +310,7 @@ body {
 
 .imagem-sec4 {
     width: 45%;
+    display: flex;
     text-align: right;
 }
 
@@ -371,6 +382,9 @@ body {
 }
 
 .video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 25rem;
     height: 20rem;
 }
@@ -400,6 +414,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 
 /*Recomendação*/
 .recomendacao-section {
@@ -756,6 +771,7 @@ body {
     border-color: #d5d8dc;
     flex-direction: row;
     gap: 0 10px;
+    text-align: left;
 }
 
 .faq-icon {
@@ -876,7 +892,7 @@ body {
     background-color: #344046;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: justify;
     
 }
 
@@ -888,7 +904,7 @@ body {
     padding: 0;
     font-family: monospace,monospace;
     font-size: 1rem;
-    white-space: pre-wrap;
+    /*white-space: pre-wrap; */
 }
 
 .payment-security {
@@ -1093,8 +1109,12 @@ body {
     .conteudo-sec4 {
         flex-direction: column;
     }
+    .imagem-sec4 {
+        width: 100%;
+    }
+
     .imagem-sec4 img {
-        max-width: 90%;
+        max-width: 100%;
     }
     .texto-sec4 p {
         margin-left: auto;
@@ -1179,5 +1199,12 @@ body {
     #selos {
         text-align: center;
         width: 90%;
+    }
+    .faq-question {
+        text-align: left;
+    }
+    #faq h2 {
+        font-size: 1.5625rem !important;
+        text-transform: uppercase;
     }
 }

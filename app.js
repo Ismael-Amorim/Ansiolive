@@ -1,24 +1,3 @@
-let player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('youtubePlayer');
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-    const overlay = document.getElementById('videoOverlay');
-
-    overlay.addEventListener('click', function () {
-        if (player) {
-            let state = player.getPlayerState();
-            if (state === YT.PlayerState.PLAYING) {
-                player.pauseVideo();
-            } else {
-                player.playVideo();
-            }
-        }
-    });
-});
-
 //Faq
 document.addEventListener("DOMContentLoaded", function () {
     const questions = document.querySelectorAll(".faq-question");
@@ -37,5 +16,32 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+});
+
+//Depoimentos
+let depoimentoPlayers = {};
+
+function onYouTubeIframeAPIReady() {
+    for (let i = 1; i <= 7; i++) {
+        depoimentoPlayers[`video${i}`] = new YT.Player(`video-0${i}`);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    for (let i = 1; i <= 7; i++) {
+        const overlay = document.getElementById(`overlay-0${i}`);
+
+        overlay.addEventListener('click', function () {
+            let player = depoimentoPlayers[`video${i}`];
+            if (player) {
+                let state = player.getPlayerState();
+                if (state === YT.PlayerState.PLAYING) {
+                    player.pauseVideo();
+                } else {
+                    player.playVideo();
+                }
+            }
+        });
+    }
 });
 
