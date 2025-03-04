@@ -1206,6 +1206,7 @@ body {
     #faq h2 {
         font-size: 1.5625rem !important;
         text-transform: uppercase;
+        padding: 1rem;
     }
     .video-wrapper-depoimentos {
         position: relative;
