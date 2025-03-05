@@ -741,11 +741,14 @@ body {
 /*Faq*/
 #faq h2 {
     font-family: "League Spartan",Sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #f0520b;
+    background-color: #e65300;
+    color: white;
+    padding: 15px;
+    font-size: 2.5rem;
+    display: inline-block;
+    width: 100%;
     margin-bottom: 1rem;
+    text-transform: uppercase;
     
 }
 
@@ -892,7 +895,7 @@ body {
     background-color: #344046;
     color: white;
     font-family: Arial, sans-serif;
-    text-align: left;
+    text-align: center;
     
 }
 
@@ -904,6 +907,7 @@ body {
     padding: 0;
     font-family: monospace,monospace;
     font-size: 1rem;
+    
     /*white-space: pre-wrap; */
 }
 
@@ -980,6 +984,59 @@ body {
     line-height: 1.4;
 }
 
+/*Pop up*/
+.popup-compra {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #e6f2ff;
+    border: 2px solid #4d94ff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(20px);
+    max-width: 300px;
+}
+
+.popup-img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.popup-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-nome {
+    font-size: 16px;
+    color: #003366;
+    font-weight: bold;
+    display: block;
+}
+
+.popup-produto {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.popup-visivel {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+@media (max-width: 767px) {
+    .popup-compra {
+        left: 50%;
+        transform: translateX(-50%) translateY(20px);
+    }
+}
 
 @media (max-width: 768px) {
     .ansiedade-container {

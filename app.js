@@ -45,3 +45,44 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+//Pop up
+const nomesBrasileiros = [
+    "Enzo Gabriel", "Valentina", "João Miguel", "Maria Eduarda", "Pedro Henrique",
+    "Ana Luiza", "Miguel", "Larissa", "Arthur", "Sophia",
+    "Davi Lucca", "Alice", "Heitor", "Laura", "Bernardo",
+    "Manuela", "Théo", "Júlia", "Gabriel", "Helena",
+    "Lorenzo", "Isadora", "Cauã", "Mariana", "Benício",
+    "Lorena", "Gustavo", "Lívia", "Samuel", "Giovanna",
+    "Felipe", "Maria Clara", "João Pedro", "Heloísa", "Isaac",
+    "Maria Luiza", "Henrique", "Beatriz", "Murilo", "Lara",
+    "Pietro", "Antonella", "Lucca", "Thiago",
+    "Bianca", "Eduardo", "Cecília", "Bryan", "Rafaela"
+];
+
+function nomeAleatorio() {
+    return nomesBrasileiros[Math.floor(Math.random() * nomesBrasileiros.length)];
+}
+
+function mostrarPopup() {
+    const popup = $(`
+        <div class="popup-compra">
+          <img src="img/produto.webp" class="popup-img">
+          <div class="popup-texto">
+            <span class="popup-nome">${nomeAleatorio()}</span>
+            <span class="popup-produto">Acabou de adquirir o ANSIOLIVE</span>
+          </div>
+        </div>
+      `);
+
+    $("body").append(popup);
+    setTimeout(() => {
+        popup.addClass("popup-visivel");
+    }, 100);
+
+    setTimeout(() => {
+        popup.removeClass("popup-visivel");
+        setTimeout(() => popup.remove(), 500);
+    }, 5000);
+}
+
+setInterval(mostrarPopup, 20000);
