@@ -130,6 +130,9 @@ body {
 
 /* Etiquetas */
 .etiqueta {
+    display: flex;
+    align-items: center;
+
     background-color: #014F86;
     color: white;
     font-size: 1rem;
@@ -137,11 +140,20 @@ body {
     font-weight: bold;
     padding: 0.625rem 1.25rem;
     border-radius: 1.25rem;
-    text-align: center;
+    text-align: left; /* Garante que o texto não fique centralizado em relação à largura total */
     width: 15.625rem;
-    height: 3rem;
-    align-content: center;
+    height: 3.5rem;
 }
+
+.etiqueta i {
+    flex-shrink: 0; /* Garante que o ícone não diminua */
+}
+
+.etiqueta span {
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+    text-align: center; /* Centraliza o texto dentro do espaço disponível */
+}
+
 
 /* Imagem do produto */
 .imagem img {
@@ -595,7 +607,6 @@ body {
 /*Garantia*/
 .garantia {
     background-color: #DFF0FF;
-    padding: 50px 0;
     border-radius: 30px;
     max-width: 1100px;
     margin: 0 auto;
@@ -765,7 +776,7 @@ body {
 
 .faq-question {
     background-color: #014f86;
-    color: #1f2124;
+    color: #fff;
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
@@ -806,6 +817,7 @@ body {
     align-items: flex-start; /* Garante que o topo dos elementos fique alinhado */
     padding: 40px;
     background-color: #fff;
+    margin-bottom: -2.5rem !important;
 }
 
 .book-container {
@@ -937,7 +949,7 @@ body {
 }
 
 .contact-info span {
-    color: #6ec1e4;
+    color: #fff;
     font-size: 14px;
     margin-top: 15px;
     text-align: left;
@@ -1092,7 +1104,7 @@ body {
     }
 
     .text-content ul {
-        text-align: center;
+        text-align: left;
     }
 }
 
