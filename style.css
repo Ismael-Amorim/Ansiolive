@@ -33,7 +33,7 @@ body {
 .container {
     width: 100%;
     padding: 1.25rem;
-    background: linear-gradient(to right, #d0e2f1, #0c3c69);
+    background: linear-gradient(to right, #81b8e6, #0c3c69);
     color: white;
     display: flex;
     flex-wrap: wrap;
